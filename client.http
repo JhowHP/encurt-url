@@ -1,0 +1,27 @@
+POST http://localhost:1211/api/links
+Content-Type: application/json
+
+//irá gerar o ID para cada cod e url acessada e n pode está junto a parte de cima com a solicitação JSON
+
+{
+    "code": "teste2",
+    "url": "https://rocketseat.com.br"
+}
+
+
+###
+
+// irá listar de forma decrescente os ID's que foram obtidos a partir do Post
+
+GET http://localhost:1211/api/links
+
+###
+// irá retornar um ranque de acordo com o range aplicado na requisição e usando o ByScore WithScores
+
+get http://localhost:1211/api/metrics
+
+###
+
+// Irá retornar o site em questao de acordo com seu code
+
+GET http://localhost:1211/meu_git
